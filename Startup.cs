@@ -51,7 +51,7 @@ namespace Task.Api
                                     //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["TokenKey"])),
 
                                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
-                                       .GetBytes(_configuration.GetSection("AppSettings:Token").Value)),
+                                       .GetBytes(_configuration.GetSection("TokenKey").Value)),
                                     ValidateIssuer = false,
                                     ValidateAudience = false
                                 };
