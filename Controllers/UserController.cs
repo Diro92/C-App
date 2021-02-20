@@ -25,29 +25,34 @@ namespace Task.Api.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
+       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers(Userforlogin userforlogin)
         {
-            var users = await _userRepository.Getuserasync();
+            var users = await _userRepository.GetMembersAsync();
 
-            var Userstoreturn = _mapper.Map<IEnumerable<MemberDto>>(users);
+            // var users = await _userRepository.Getuserasync();
 
-            return Ok(Userstoreturn);
+            // var Userstoreturn = _mapper.Map<IEnumerable<MemberDto>>(users);
+
+            return Ok(users);
 
         }
        
-        [Authorize]
+        
         [HttpGet("{name}")] 
-        public async Task<IActionResult> GetUser(string name){
+        public async Task<ActionResult> GetUser(string name){
               
-            var users = await _userRepository.Getuserasync();
+            var specificUser =  await _userRepository.GetMemberAsync(name);
 
-            var specificUser = _mapper.Map<IEnumerable<MemberDto>>(users).Where(x => x.Name == name);
+            //  var users = await _userRepository.Getuserasync();
+
+            // var specificUser = _mapper.Map<IEnumerable<MemberDto>>(users).Where(x => x.Name == name);
 
             return Ok(specificUser);
 
         }
+        
     
     }
 

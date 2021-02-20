@@ -16,7 +16,7 @@ namespace Task.Api.models
         
         public User User{get;set;}
 
-        public int Userid {get;set;}
+        public int Userid {get;set;}  // Fully defining the entity 
 
     
 
