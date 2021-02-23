@@ -57,6 +57,13 @@ namespace Task.Api.Interfaces
                   .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
                   .FirstOrDefaultAsync();
         }
+
+        public async Task<MemberDto> GetUserByUsernameAsync(string username)
+        {
+            return await _context.Users
+                .Include(p => p.Tareas)
+                .SingleOrDefaultAsync(x => x.Name == username);
+        }
     }
 
 

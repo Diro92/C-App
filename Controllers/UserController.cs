@@ -10,6 +10,7 @@ using Task.Api.Data;
 using Task.Api.DTOS;
 using Task.Api.Interfaces;
 using Task.Api.models;
+using System.Security.Claims;
 
 namespace Task.Api.Controllers
 {
@@ -51,6 +52,25 @@ namespace Task.Api.Controllers
 
             return Ok(specificUser);
 
+        }
+
+        [HttpDelete("delete-Task/{Taskid}")]
+
+        public async Task<ActionResult> DeleteTask(int taskid)
+        {
+                // var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                var user = await _userRepository.GetUserByUsernameAsync(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+                var tarea =user.Tareas.FirstOrDefault(x =>x.ID == taskid);
+
+                // Console.WriteLine(tarea);
+
+                if(tarea==null) return NotFound();
+
+                user.Tareas.Remove(tarea);
+
+                return Ok();
         }
         
     
