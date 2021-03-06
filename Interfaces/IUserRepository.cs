@@ -10,14 +10,20 @@ namespace Task.Api.Interfaces
 
         void Update(User User);
 
-        Task<IEnumerable<User>> Getuserasync();
+        Task<bool> SaveAllSync();
 
-        Task<User> Getusersasync(int id);
 
+        Task<IEnumerable<User>> Getusersync();
+
+        Task<User> GetUserByIdAsync(int id);
+
+        Task<User> GetUserByUsernameAsync(string username);
         Task<IEnumerable<MemberDto>> GetMembersAsync();
-
         Task<MemberDto> GetMemberAsync(string username);
 
-        Task<MemberDto> GetUserByUsernameAsync(string username);
+       
+
+
+
     }
 }
