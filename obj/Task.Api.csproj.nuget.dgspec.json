@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj": {}
+    "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj": {
+    "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj",
+        "projectUniqueName": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj",
         "projectName": "Task.Api",
-        "projectPath": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj",
+        "projectPath": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj",
         "packagesPath": "C:\\Users\\justa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\obj\\",
+        "outputPath": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\justa\\AppData\\Roaming\\NuGet\\NuGet.Config"

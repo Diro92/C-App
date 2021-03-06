@@ -26,6 +26,7 @@ namespace Task.Api.Controllers
             _mapper = mapper;
         }
 
+        [Authorize]
         [HttpGet]
        public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers(){
 
@@ -34,7 +35,7 @@ namespace Task.Api.Controllers
            
            return Ok(userstoreturn);
        }
-        
+        [Authorize]
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username){
 
@@ -43,6 +44,17 @@ namespace Task.Api.Controllers
 
         
         }
+        
+        // [HttpDelete("delete-task/{Taskid}")]
+        // public async Task<ActionResult> DeleteTask (int taskid)
+        // {
+        //    var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+
+
+        //    return BadRequest("va");
+
+        // }
 
        
     }

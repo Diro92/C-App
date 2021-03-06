@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HyxEVfWrD5daRwi9K4OeVGASmrR1Z64MEtVGqUIljoURI7L4ulQngSpbkXz5zHgaky3ypFAHK5/OIknomFwjlA==",
+  "dgSpecHash": "qXLUoEIO9GKAGMNHXURWtH2X4WzU83VWHSE9lLaKpVa+hSeNJHK6ZbN1Ds7SFMQAtYup7jfoVII/8DFLUZHy3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj",
+  "projectFilePath": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\justa\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\justa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

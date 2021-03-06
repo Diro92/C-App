@@ -11,6 +11,8 @@ using Task.Api.Data;
 using AutoMapper;
 using Task.Api.Helpers;
 using Task.Api.Interfaces;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace Task.Api
 {
@@ -40,6 +42,8 @@ namespace Task.Api
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddAutoMapper(typeof(AutomapperProfiles).Assembly);
+            services.Configure<IdentityOptions>(options => 
+                      options.ClaimsIdentity.UserIdClaimType = ClaimTypes.NameIdentifier);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(
                             options =>
