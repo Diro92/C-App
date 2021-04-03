@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.Extensions.Logging;
 using Task.Api.Data;
 using Task.Api.DTOS;
 using Task.Api.Interfaces;
 using Task.Api.models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Task.Api.Controllers
 {
@@ -26,7 +27,7 @@ namespace Task.Api.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
+      
         [HttpGet]
        public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers(){
 
@@ -35,7 +36,7 @@ namespace Task.Api.Controllers
            
            return Ok(userstoreturn);
        }
-        [Authorize]
+       
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> GetUser(string username){
 

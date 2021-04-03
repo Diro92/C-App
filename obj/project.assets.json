@@ -6789,11 +6789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj",
+      "projectUniqueName": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj",
       "projectName": "Task.Api",
-      "projectPath": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\Task.Api.csproj",
+      "projectPath": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\Task.Api.csproj",
       "packagesPath": "C:\\Users\\justa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justa\\Desktop\\Frame\\C#\\Task.Api\\obj\\",
+      "outputPath": "C:\\Users\\justa\\Desktop\\Frame\\c#\\task.api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\justa\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6875,7 +6875,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }
